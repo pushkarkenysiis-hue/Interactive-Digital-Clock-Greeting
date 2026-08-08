@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/* Main Code */
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #A5CC6B;
+    font-family: 'Comic-Neue', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #382633;
+
+    width: 100%;
+    max-width: 500px;
+    padding: 32px;
+    margin: 24px;
+
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px #382633;
+}
+
+#greeting{
+    padding-bottom: 16px;
+    font-size: 36px; 
+    font-weight: 700;
+}
+
+#timeDisplay{
+    padding-bottom: 25px;
+    font-size: 54px; 
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#toggleTime{
+    padding: 12px 24px;
+
+    background-color: #92BDA3;
+    font-family: 'comic-neue', cursive;
+
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in, box-shadow 0.2s ease-in;
+}
+#toggleTime:hover{
+    box-shadow: 0px 0 14px #382633;
+    transform: scale(1.03);
+}
+
+/* responsive */
+@media (max-width: 480px) {
+    .clock-container {
+        padding: 24px;
+        margin: 16px;
+    }
+    
+    #greeting {
+        font-size: 28px;
+        padding-bottom: 12px;
+    }
+    
+    #timeDisplay {
+        font-size: 42px;
+        padding-bottom: 20px;
+    }
+
+    #toggleTime {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
